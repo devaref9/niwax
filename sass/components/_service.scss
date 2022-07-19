@@ -1,0 +1,72 @@
+.service {
+  padding: 10rem 0;
+  position: relative;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: url("../../assets/images/dot-shape.png") #d7f0fd;
+    // background-repeat: no-repeat;
+    z-index: -1;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &__subtitle {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+
+  &__btn {
+    border-radius: $border-rounded;
+  }
+
+  &__card-container {
+    display: flex;
+    gap: 2.4rem;
+    margin-top: 6rem;
+    margin-bottom: 7rem;
+    position: relative;
+  }
+
+  &__card-container::after {
+    content: "";
+    position: absolute;
+    background-image: url("/assets/images/shape-1.svg");
+    left: -53px;
+    bottom: -36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 130px;
+    z-index: -1;
+  }
+
+  &__card-container::before {
+    content: "";
+    position: absolute;
+    background-image: url("/assets/images/shape-2.svg");
+    right: -55px;
+    bottom: -80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 180px;
+    z-index: -1;
+  }
+
+  &__application {
+    @include flex(row, center, center);
+    gap: 3rem;
+  }
+
+  &__application-title {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,22 @@
+@mixin bgGradient(
+  $direction,
+  $first-color,
+  $first-number,
+  $second-color,
+  $second-number
+) {
+  background: linear-gradient(
+    $direction,
+    $first-color $first-number,
+    $second-color $second-number
+  );
+}
+
+@mixin flex($direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+

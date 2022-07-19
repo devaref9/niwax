@@ -1,0 +1,47 @@
+.btn {
+  &--main {
+    padding: 0 3.2rem;
+    line-height: 56px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: $border-rounded;
+  }
+
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+
+  & .circle {
+    position: absolute;
+    display: block;
+    top: 10%;
+    right: 50%;
+    transition: all 0.3s ease;
+  }
+
+  &:hover .circle {
+    transform: translateX(77%) translateY(-5%);
+  }
+
+  & > i {
+    padding: 0 0.5rem;
+  }
+
+  &--pink {
+    @include bgGradient(to right, $color-beige, 0%, $color-pink, 100%);
+    box-shadow: 0 10px 15px 0px rgba(175, 0, 87, 0.2);
+    color: $color-white;
+  }
+
+  &--blue {
+    @include bgGradient(to right, $color-purple-dark, 0%, $color-blue, 100%);
+    box-shadow: 0 10px 15px 0px rgba(56, 0, 189, 0.2);
+    color: $color-white;
+  }
+
+  &--purple {
+    @include bgGradient(to right, $color-pink, 0%, $color-purple-light, 100%);
+    color: $color-white;
+  }
+}

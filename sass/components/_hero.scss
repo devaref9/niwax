@@ -1,0 +1,48 @@
+.hero {
+  @include bgGradient(to bottom, $color-sky-blue, 0%, #f9efff, 100%);
+  width: 100%;
+  padding: 10rem 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    background-position: left 0;
+    background-image: url("../../assets/images/banner-shap-2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    gap: 2.4rem;
+  }
+
+  &__heading {
+    margin-bottom: 3rem;
+  }
+
+  &__desc {
+    font-size: 2rem;
+    margin-bottom: 3.5rem;
+    line-height: 30px;
+  }
+
+  &__btn i {
+    animation: rightToleftInfinite 2s ease-in-out infinite;
+  }
+
+  &__image {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+}

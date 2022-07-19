@@ -1,0 +1,45 @@
+* {
+  font-family: "Iranyekan", Arial, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+body {
+  color: $color-light-text;
+}
+
+.heading {
+  font-weight: 700;
+  color: $color-dark-text;
+
+  &--1 {
+    font-size: 5rem;
+    line-height: 62px;
+  }
+
+  &--2 {
+    font-size: 4rem;
+    line-height: 52px;
+  }
+
+  &--4 {
+    font-size: 2.2rem;
+    line-height: 32px;
+  }
+
+  &--5 {
+    font-size: 2rem;
+  }
+
+  &__subtitle {
+    font-size: 1.6rem;
+    line-height: 26px;
+    letter-spacing: .5px;
+  }
+}
+
+p > strong {
+  font-weight: 700;
+  font-size:  inherit;
+  color: $color-dark-text;
+}

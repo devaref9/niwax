@@ -1,0 +1,95 @@
+.main-nav {
+  height: 100%;
+  @include flex(row, space-between, center);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    align-self: center;
+    display: flex;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 3rem;
+  }
+
+  &__item {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    border-radius: 5px;
+    background-color: $color-accent;
+    transition: 0.3s;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__item:hover &__link::after {
+    width: 100%;
+  }
+
+  &__link {
+    color: $color-dark-text;
+    font-size: 1.6rem;
+    font-weight: 500;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__contact {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__contact .dropdown__content {
+    height: 18rem;
+    left: 0;
+    width: 25rem;
+  }
+
+  &__contact .dropdown__item:first-of-type {
+    background-color: $color-beige;
+  }
+
+  &__connect {
+    @include flex(row, center, center);
+    width: 48px;
+    height: 48px;
+    border-radius: $border-circle;
+    margin: 0 2.5rem 0 1.5rem;
+  }
+
+  &__connect i {
+    font-size: 1.7rem;
+  }
+
+  &__btn {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 48px;
+    border-radius: $border-rounded;
+    padding: 0 2rem;
+  }
+}

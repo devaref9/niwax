@@ -1,0 +1,12 @@
+.user {
+  @include flex(row, flex-start, center);
+  gap: 2rem;
+  &__image {
+    border-radius: $border-circle;
+    width: 80px;
+  }
+
+  &__content {
+    font-size: 1.6rem;
+  }
+}

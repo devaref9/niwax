@@ -1,0 +1,51 @@
+.card {
+  background-color: $color-white;
+  border-radius: 8px;
+  padding: 5rem 2rem;
+  background-image: url("../../assets/images/card-background.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 18rem;
+  box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.2);
+  border: 1px solid $color-sky-blue;
+  @include flex(column, space-between, center);
+
+  &__image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 3rem;
+    color: $color-light-text;
+    transition: 0.3s;
+    position: relative;
+    padding-bottom: 3px;
+  }
+
+  &__link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    background-color: $color-pink;
+    height: 2px;
+    border-radius: 4px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  &__link:hover {
+    color: $color-pink;
+  }
+
+  &__link:hover::after {
+    width: 100%;
+  }
+}

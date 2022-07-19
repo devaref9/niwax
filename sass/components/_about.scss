@@ -1,0 +1,18 @@
+.about {
+  background-image: url("../../assets/images/dot_bg.png");
+  background-repeat: repeat;
+  padding: 10rem 0;
+
+  &__inner {
+    @include flex(row, center, center);
+    gap: 2.4rem;
+  }
+
+  &__heading {
+    margin: 1.5rem 0 2rem 0;
+  }
+
+  &__quote {
+    margin: 1rem 0 3rem 0;
+  }
+}

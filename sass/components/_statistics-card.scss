@@ -1,0 +1,66 @@
+.statistics-card {
+  @include flex(row, center, center);
+  gap: 2rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icon-container {
+    padding: 1.5rem;
+    background-color: $color-white;
+    border-radius: 8px 40px;
+    transform-style: preserve-3d;
+  }
+
+  &__icon {
+    vertical-align: middle;
+    transform: translateZ(20px);
+  }
+
+  &__number {
+    display: flex;
+  }
+
+  &__number > span {
+    color: $color-dark-text;
+    font-weight: 700;
+  }
+
+  &__title {
+    color: $color-light-text;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+
+  &--large &__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  &--large &__number > span{
+    font-size: 4.5rem;
+    line-height: 45px;
+  }
+
+  &--large &__title {
+    font-size: 2rem;
+    line-height: 28px;
+  }
+
+  &--small &__icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  &--small &__number , &__number > span{
+    font-size: 3.5rem;
+    line-height: 35px;
+  }
+
+  &--small &__title {
+    font-size: 1.8rem;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-os-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: block;
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  @include bgGradient(to top, $color-beige, 0%, $color-pink, 100%);
+}

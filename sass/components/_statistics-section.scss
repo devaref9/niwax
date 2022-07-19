@@ -1,0 +1,22 @@
+.statistics {
+  @include bgGradient(to bottom, $color-sky-blue, 0%, #f9efff, 100%);
+  padding: 10rem 0;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+  }
+
+  &__inner > div {
+    display: flex;
+  }
+
+  &__inner > div:first-of-type {
+    justify-content: space-evenly;
+  }
+
+  &__inner > div:last-of-type {
+    justify-content: space-around;
+  }
+}
