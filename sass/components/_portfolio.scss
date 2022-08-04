@@ -1,3 +1,26 @@
 .portfolio {
-    background-color: orangered;
+  padding: 10rem 0;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    background-image: url("../../assets/images/portfolio-shape.png");
+    z-index: -1;
+  }
+
+  &__subtitle {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

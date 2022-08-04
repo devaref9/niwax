@@ -1,0 +1,29 @@
+.portfolio-card {
+  padding: 0 1.2rem;
+  margin-top: 6rem;
+  &__body {
+    text-align: right;
+    padding-top: 2rem;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__header {
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-box-shadow: 6px 5px 19px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 5px 19px -3px rgba(0, 0, 0, 0.1);
+  }
+  &__image {
+    width: 100%;
+    vertical-align: middle;
+    transform: scale(1);
+    transition: 1.2s cubic-bezier(.17, .85, .438, .99);
+  }
+
+  &__image:hover {
+    transform: scale(1.05);
+  }
+}

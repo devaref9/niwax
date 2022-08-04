@@ -326,7 +326,66 @@
     <section class="portfolio">
         <div class="container">
             <div class="portfolio__inner">
-                This is portfolio
+                <span class="portfolio__subtitle heading__subtitle text--primary">کارهای ما</span>
+                <h2 class="portfolio__heading heading heading--2">آخرین کارهای ما</h2>
+                <div class="portfolio__gallery">
+                    <div class="portfolio-card flex--2-3">
+                        <div class="portfolio-card__header" data-tilt>
+                            <a href="#">
+                                <img class="portfolio-card__image" src="./assets/images/portfolio-1.jpg"
+                                    alt="توسعه تجارت الکترونیک">
+                            </a>
+                        </div>
+                        <div class="portfolio-card__body flex--2-3">
+                            <h4 class="portfolio-card__title">
+                                <a class="heading heading--4" href="#">توسعه تجارت الکترونیک</a>
+                            </h4>
+                            <p class="portfolio-card__desc">برنامه تحت وب</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card flex--1-3">
+                        <div class=""></div>
+                        <div class="portfolio-card__header" data-tilt>
+                            <a href="#">
+                                <img class="portfolio-card__image" src="./assets/images/portfolio-2.jpg"
+                                    alt="برنامه خلاقانه">
+                            </a>
+                        </div>
+                        <div class="portfolio-card__body">
+                            <h4 class="portfolio-card__title">
+                                <a class="heading heading--4" href="#">برنامه خلاقانه</a>
+                            </h4>
+                            <p class="portfolio-card__desc">موبایل</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card flex--1-3">
+                        <div class="portfolio-card__header" data-tilt>
+                            <a href="#">
+                                <img class="portfolio-card__image" src="./assets/images/portfolio-3.jpg"
+                                    alt="طراحی بروشور">
+                            </a>
+                        </div>
+                        <div class="portfolio-card__body">
+                            <h4 class="portfolio-card__title">
+                                <a class="heading heading--4" href="#">طراحی بروشور</a>
+                            </h4>
+                            <p class="portfolio-card__desc">گرافیک، پرینت</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card flex--2-3">
+                        <div class="portfolio-card__header" data-tilt>
+                            <a href="#">
+                                <img class="portfolio-card__image" src="./assets/images/portfolio-4.jpg" alt="پک آیکون">
+                            </a>
+                        </div>
+                        <div class="portfolio-card__body">
+                            <h4 class="portfolio-card__title">
+                                <a class="heading heading--4" href="#">پک آیکون</a>
+                            </h4>
+                            <p class="portfolio-card__desc">موبایل</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -341,6 +400,11 @@
         $(document).ready(function () {
             $('.service__card').tilt({
                 maxTilt: 5,
+            })
+        })
+        $(document).ready(function () {
+            $('.portfolio-card__header').tilt({
+                maxTilt: 2,
             })
         })
     </script>
